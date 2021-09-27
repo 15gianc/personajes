@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagenes/marmol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    position: fixed;
+    font-size: 24px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.img-logo{
+    height: 70px;
+   
+    padding: 10px;   
+}
+
+/*.menu{
+    
+}*/
+
+.menu ul{
+    display: flex;
+    list-style: none;
+   
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 18px;
+    padding-right: 45px;
+    padding-left: 45px;
+   
+    
+}
+
+.menu ul li a:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+
+main{
+    /*Especifica el tipo de metodo de posicionamiento utilizado para un elemento
+    (valores: static, relative, absolute y fixed)*/
+    position: relative;
+    top: 80px;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*unidad vh es una medida relativa, de acuerdo al viewport*/
+    height: 65vh;
+}
+
+div.gallery-container div.gallery-item{
+    /* abreviatura para el flex-grow, flex-shrink y flex-basis
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    
+    Hace que el elemento flexible sea flexible y establece la base flexible en 0*/
+    flex: 1;
+    height: 100%;
+    /* hace que el cursor cambie al pasarlo encima */
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*animacion*/
+    transition: flex 0.5s ease-in-out;
+
+}
+
+div.gallery-item span{
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px 8px;
+    background-color: salmon;
+    opacity: 0.8;
+    /* desapacere el boton con el nombre */
+    transition: opacity 0.8s ease;
+    border-radius: 5px;
+}
+
+div.gallery-container div.gallery-item:hover span{
+    opacity: 0;
+}
+
+.gallery-container .gallery-item:hover{
+    /* flex-grow: indica el factor de crecimiento del item, respecto al resto 
+    la propiedad flex: flex-grow flex-shrink flex-basis*/
+    flex: 4;
+
+
+
+}
+
+
+.gallery-container .gallery-item.g-item-1{
+    background-image: url(../imagenes/Galileo.jpeg);
+}
+
+.gallery-container .gallery-item.g-item-2{
+    background-image: url(../imagenes/frida.jpg);
+}
+
+.gallery-container .gallery-item.g-item-3{
+    background-image: url(../imagenes/abraham.jpg);
+
+}
+
+.gallery-container .gallery-item.g-item-4{
+    background-image: url(../imagenes/einstein.jpg);
+}
+
+.gallery-container .gallery-item.g-item-5{
+    background-image: url(../imagenes/jesus.jpg);
+}
+
+.container-personajes{
+    margin: 180px 110px 0px 110px;
+
+}
+
+.container-personajes2{
+    margin: 80px 110px 0px 110px;
+
+}
+
+.container-personajes3{
+    margin: 80px 110px 0px 110px;
+
+}
+
+.container-personajes4{
+    margin: 80px 110px 0px 110px;
+
+}
+
+.container-personajes5{
+    margin: 80px 110px 0px 110px;
+
+}
+
+.container-personajes h1{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.container-personajes2 h2{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 45px;
+    
+}
+
+.container-personajes3 h2{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 45px;
+    
+}
+
+.container-personajes4 h2{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 45px;
+    
+}
+
+.container-personajes5 h2{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 45px;
+    
+}
+
+.container-p1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+
+}
+
+.container-p1 .card{
+    width: 200px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    /*Oculta el contenido sobrante*/
+   transition: 0.3s;
+    margin: 0 3px;
+    
+}
+
+.container-p1 .card:hover{
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-p1 .card img{
+    width: 200px;
+    height: 170px;
+    border-radius: 12px;
+}
+
+.container-p1 .card h4{
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 15px;
+    text-align: justify;
+    margin: 1px 5px 1px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer{
+    background-color: #000000f5;
+    margin-top: 7cm;
+    height: 150px;
+}
+
+.containerfinal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerfinal .copy h6{
+    font-size: 20px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.containerfinal .copy p{
+    font-size: 15px;
+    font-weight: 100;
+    color: whitesmoke;
+    padding-top: 18px;
+}
+
+.containerfinal .about h6{
+    font-size: 20px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.containerfinal .about p{
+    font-size: 15px;
+    font-weight: 100;
+    color: whitesmoke;
+    padding-top: 18px;
+}
+
+.containerfinal .redes h6{
+    font-size: 20px;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.containerfinal .redes img{
+    padding-top: 18px;
+}
+
+
